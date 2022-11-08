@@ -15,9 +15,9 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="height: 40px;"/> 
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" style="height: 40px;"/>
 
-  <br>
+  <br/><br/>
 
-  **Status do Projeto:** 60% - Em progresso
+  **Status do Projeto:** Concluído ✅ <br/><br/>
     
   A rede social *Espectro* pode ser visitada [aqui](https://brunalimxst.github.io/espectro-social-network/)!
 </div>
@@ -35,10 +35,10 @@
 ***
 
 ## 1. Prefácio
-Rede social é uma estrutura social composta por pessoas ou organizações, conectadas por um ou vários tipos de relações, que compartilham valores e objetivos comuns. Como exemplo, temos o Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. É um fato que as redes sociais hoje, atuam além de uma plataforma de entretenimento, a possibilidade de conectar-se com outras pessoas, histórias, produtos, informações cria uma rede de negócio. Passou a atribuir valor e credibilidade para uma marca, o bom uso de um perfil no instagram, por exemplo. 
+**Rede social** é uma estrutura social composta por pessoas ou organizações, conectadas por um ou vários tipos de relações, que compartilham valores e objetivos comuns. Como exemplo, temos o Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. É um fato que as redes sociais hoje, atuam além de uma plataforma de entretenimento, a possibilidade de conectar-se com outras pessoas, histórias, produtos, informações cria uma rede de negócio. Passou a atribuir valor e credibilidade para uma marca, o bom uso de um perfil no instagram, por exemplo. 
 
 <div align='center'>
-<img alt="imagem-redes-sociais" src="src/imagens/redes.png" style="height: 300px;"><br/><br/>
+<img alt="imagem-redes-sociais" src="src/imagens/redes-sociaiss.svg" style="height: 500px;"><br/><br/>
 </div>
 
 ## 2. Resumo do projeto
@@ -113,7 +113,7 @@ Após refinamento do prótotipo de acordo com os feedbacks recebidos, alcançamo
 Social Network foi o terceiro projeto de Desenvolvimento Web da Laboratória e foi desenvolvido pelo trio: [Bruna Lima](https://github.com/brunalimxst), [Gabriela Sene](https://github.com/devgabrielasene) e [Gabriella Viroli](https://github.com/GabriellaViroli)
 
 ## 7. Considerações técnicas 
-A lógica do projeto foi implementada somente em JavaScript vanilla, HTML e CSS. Neste projeto não foi permitido o uso de bibliotecas e frameworks, com exceção do framework Firebase como banco de dados. Foram utilizadas metodologias de UX, testes de usabilidade e prototipagem de telas através do Figma. 
+A lógica do projeto foi implementada somente em **JavaScript Vanilla**, **HTML e CSS**. Neste projeto não foi permitido o uso de bibliotecas e frameworks. Como serviço Back-end as a Service e banco de dados utilizamos o **Firebase**, **Jest** para os testes unitários e também usamos no back-end o **Node.js**. Foram utilizadas metodologias de **UX/UI**, testes de usabilidade e prototipagem de telas através do **Figma**. 
 
 ## 8. Objetivos de Aprendizagem 
 - [x] JavaScript (tipo de dados, arrays, objetos, funções, condicionais, laços, etc)
