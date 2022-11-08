@@ -63,7 +63,9 @@ A partir de um [formulário](https://docs.google.com/forms/d/e/1FAIpQLScen5FTO1-
  ## 4. Histórias de Usuário 
  A primeira história de usuário foi definida pensando numa pessoa que foi diagnosticada tardiamente e está no espectro autista de nível 1:
  
- ![História de usuário 1](https://i.pinimg.com/236x/ed/e3/26/ede3265b77c5d626feb95e6709717fbd.jpg)
+<div align='center'>
+  <img alt="História de Usuário 1" src="src/imagens/historia1.svg" style="height: 500px;"><br/>
+</div>
  
  A partir dessa história, foi definido os critérios de aceitação voltado ao processo de encontrar uma rede social e se cadastrar. 
 *Critérios de aceitação:* Ao entrar na primeira página da rede social, o usuário poderá escolher dinamicamente entre se logar diretamente caso já tenha uma conta, ou se cadastrar. Na página "Cadastre-se", deverá inserir nome completo, nome de usuário, e-mail e senha, e clicar no botão "Cadastrar". Além disso, o usuário deve conseguir escolher entre criar uma nova conta ou se logar por meio de uma conta Google, associado a um Gmail.
@@ -74,7 +76,9 @@ A definição de pronto foi estabelecida a partir de recursos mínimos e obrigat
 <br>
 A segunda história de usuário foi definida pensando em pais que tiveram o diagnóstico do filho pequeno recentemente e estão aflitos, buscando informações e uma rede de apoio para que possam entender melhor todo o contexto: 
 
-![História de usuário 2](https://i.pinimg.com/736x/a0/0a/46/a00a46ae7e3c48d0075c7431cfe07285.jpg)
+<div align='center'>
+  <img alt="História de Usuário 2" src="src/imagens/historia2.svg" style="height: 500px;"><br/>
+</div>
 
 A partir dessa segunda história de usuário, foi definido os critérios de aceitação pautado numa rede social já existente em que o usuário crie sua conta e tenha acesso ao feed da rede, a qual terão publicações de outros usuários que também vivem próximos a realidade do espectro autista e utilizam aquele espaço para trocas em geral, sejam de teor informativo, desabafos pessoais, relato de algum acontecimento recente e todos guiados pelo desejo de se apoiarem e se informarem. 
 
