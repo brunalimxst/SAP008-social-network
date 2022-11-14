@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import {
+ import {
   readAllPosts,
   createDataPost,
   createDataAnswer,
@@ -62,7 +62,7 @@ describe('newPost', () => {
     expect(typeof newPost).toBe('function');
   });
   it('should call another function one time', () => {
-    const dataPost = newPost('testMessageContent', 'testUser');
+    newPost('testMessageContent', 'testUser');
     expect(addDoc).toHaveBeenCalledTimes(1);
     expect(collection).toHaveBeenCalledTimes(1);
   });
@@ -73,7 +73,7 @@ describe('readAllPosts', () => {
     expect(typeof readAllPosts).toBe('function');
   });
   it('should call another function one time', () => {
-    const dataAllPosts = readAllPosts();
+    readAllPosts();
     expect(getDocs).toHaveBeenCalledTimes(1);
     expect(collection).toHaveBeenCalledTimes(1);
   });
