@@ -16,7 +16,7 @@ describe('loginUser', () => {
     loginUser('email', 'password');
     expect(signInWithEmailAndPassword).toHaveBeenCalledTimes(1);
     expect(signInWithEmailAndPassword).toHaveBeenCalledWith({
-      "currentUser": { "displayName": "gabriela", "userUid": "uid" }
+      currentUser: { displayName: 'gabriela', userUid: 'uid' },
     }, 'email', 'password');
   });
 });
@@ -28,7 +28,7 @@ describe('loginGoogle', () => {
   it('should call another function one time', () => {
     loginGoogle();
     expect(signInWithPopup).toHaveBeenCalledTimes(1);
-    expect(signInWithPopup).toHaveBeenCalledWith({ "currentUser": { "displayName": "gabriela", "userUid": "uid" } }, {});
+    expect(signInWithPopup).toHaveBeenCalledWith({ currentUser: { displayName: 'gabriela', userUid: 'uid' } }, {});
   });
 });
 
@@ -39,7 +39,7 @@ describe('newUser', () => {
   it('should call another function one time', () => {
     newUser('email', 'password', 'name');
     expect(createUserWithEmailAndPassword).toHaveBeenCalledTimes(1);
-    expect(createUserWithEmailAndPassword).toHaveBeenCalledWith({ currentUser: { displayName: 'gabriela', 'userUid': 'uid' } }, 'email', 'password', 'name')
+    expect(createUserWithEmailAndPassword).toHaveBeenCalledWith({ currentUser: { displayName: 'gabriela', userUid: 'uid' } }, 'email', 'password', 'name');
   });
 });
 
@@ -50,7 +50,7 @@ describe('logout', () => {
   it('should call another function one time', () => {
     logout();
     expect(signOut).toHaveBeenCalledTimes(1);
-    expect(signOut).toHaveBeenCalledWith({ "currentUser": { "displayName": "gabriela", "userUid": "uid" } });
+    expect(signOut).toHaveBeenCalledWith({ currentUser: { displayName: 'gabriela', userUid: 'uid' } });
   });
 });
 
@@ -60,6 +60,6 @@ describe('getUser', () => {
   });
   it('should call another function one time', () => {
     const user = getUser();
-    expect(user).toStrictEqual({ 'displayName': 'gabriela', 'userUid': 'uid' });
+    expect(user).toStrictEqual({ displayName: 'gabriela', userUid: 'uid' });
   });
 });

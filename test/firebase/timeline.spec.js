@@ -129,7 +129,7 @@ describe('likePost', () => {
     expect(arrayUnion).toHaveBeenCalledTimes(1);
     expect(arrayUnion).toHaveBeenCalledWith('testUserName');
     expect(updateDoc).toHaveBeenCalledTimes(1);
-    expect(updateDoc).toHaveBeenCalledWith(undefined, { 'likes': undefined });
+    expect(updateDoc).toHaveBeenCalledWith(undefined, { likes: undefined });
   });
 });
 
@@ -142,6 +142,6 @@ describe('deslikePost', () => {
     expect(arrayRemove).toHaveBeenCalledTimes(1);
     expect(arrayRemove).toHaveBeenCalledWith('testUserName');
     expect(updateDoc).toHaveBeenCalledTimes(1);
-    expect(updateDoc).toHaveBeenCalledWith(undefined, { 'likes': undefined });
+    expect(updateDoc).toHaveBeenCalledWith(undefined, { likes: undefined });
   });
 });
