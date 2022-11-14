@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 import timeline from '../../src/pages/timeline/timeline.js';
-import { redirect } from '../../src/routes.js';
+import { redirect } from '../../src/redirect.js';
 
 jest.mock('../../src/firebase/exports.js');
 jest.mock('../../src/firebase/auth.js');

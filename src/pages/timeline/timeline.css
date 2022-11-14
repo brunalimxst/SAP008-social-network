@@ -1,263 +1,4 @@
-/* mobile */
-@media (max-width: 890px) {
-  .logo-timeline {
-    display: none;
-  }
 
-  .logout-btn {
-    display: flex;
-    float: right;
-    border: none;
-    padding: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    background: transparent;
-  }
-
-  .container-main {
-    width: 100%;
-  }
-
-  .container-post {
-    width: 100%;
-    display: flex;
-  }
-
-  .img-profile {
-    background-color: rgb(151, 182, 218);
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    margin-left: 3rem;
-    margin-right: 1rem;
-  }
-
-  .post-publish {
-    display: flex;
-    border: none;
-    width: 100%;
-    background-color: unset;
-    margin-top: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-  }
-
-  .post-publish:focus {
-    outline: none;
-  }
-
-  .post-publish::placeholder {
-    font-size: 1rem;
-    font-family: "Roboto", sans-serif;
-  }
-
-  .container-btn {
-    float: right;
-  }
-
-  .publish-btn,
-  .btn-add-img {
-    border: none;
-    background: transparent;
-  }
-
-  .publish-btn {
-    padding-right: 1rem;
-    margin-left: 1rem;
-  }
-
-  .btn-add-img-icon {
-    padding-top: 1rem;
-  }
-
-  .linha-um {
-    width: 100%;
-    height: 1px;
-    background-color: #acdcee;
-    margin-top: 0.5rem;
-  }
-
-  .linha-dois {
-    width: 100%;
-    height: 1px;
-    background-color: #acdcee;
-    margin-top: 4rem;
-  }
-
-  /* template dos posts mobile */
-  .container-posts-feed {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .img-profile-post {
-    background-color: rgb(151, 182, 218);
-    border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
-    margin-left: -5rem;
-    position: absolute;
-    margin-top: 1rem;
-  }
-
-  .user-name {
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    font-style: italic;
-    text-align: center;
-    margin-right: 13rem;
-    margin-top: 1rem;
-    justify-content: center;
-    align-items: center;
-    color: rgb(14, 58, 78);
-  }
-
-  .user-name::after {
-    content: "";
-    display: block;
-    width: 4rem;
-    height: 4px;
-    background-color: #5badca;
-    margin-left: 2rem;
-    border-radius: 10px;
-  }
-
-  .post-published {
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    justify-content: center;
-    align-items: center;
-    background: #f0fbff;
-    box-shadow: 0 0 10px #acdcee70;
-    width: 15rem;
-    height: 8rem;
-    padding: 1rem;
-    margin-top: 1rem;
-  }
-
-  .container-footer-feed {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .btn-like,
-  .btn-comment,
-  .btn-delete,
-  .btn-edit {
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .btn-like:hover,
-  .btn-comment:hover,
-  .btn-delete:hover,
-  .btn-edit:hover {
-    transform: scale(1.1);
-  }
-
-  .btn-like {
-    margin-right: 1rem;
-  }
-
-  .number-likes {
-    font-family: "Roboto", sans-serif;
-    font-size: .9rem;
-    font-weight: 600;
-    font-style: italic;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: rgb(14, 58, 78);
-  }
-
-  .btn-delete {
-    margin-left: 1rem;
-    margin-top: -3rem;
-  }
-
-  .container-btns-left {
-    margin-right: 10rem;
-  }
-
-  .modal-delete {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 13rem;
-    height: 10rem;
-    padding: 20px;
-    text-align: center;
-    background-color: #003b4e;
-    border-radius: 10px;
-    box-shadow: 0 0 3px #8faab462;
-    color: aliceblue;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    animation: animate;
-    animation-duration: 0.5s;
-  }
-
-  @keyframes animate {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .modal-delete-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal-delete-text {
-    font-family: "Roboto", sans-serif;
-    font-size: .9rem;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-  }
-
-  .modal-delete-btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .btn-modal-delete,
-  .btn-modal-cancel {
-    border: none;
-    background: rgb(47, 99, 148);
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-    color: #ffffff;
-    margin-top: 2rem;
-    width: 5rem;
-    height: 2rem;
-  }
-
-  .btn-modal-delete:hover,
-  .btn-modal-cancel:hover {
-    transform: scale(1.1);
-  }
-
-  .btn-modal-delete {
-    margin-right: 2rem;
-  }
-}
 
 /* desktop */
 
@@ -269,8 +10,8 @@
 
   .logo-timeline {
     margin-left: 1rem;
-    margin-top: 1rem;
-    width: 15.75rem;
+    margin-top: 3rem;
+    position: fixed;
   }
 
   .logout-btn {
@@ -280,12 +21,14 @@
     padding: 3rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    margin-right: 4rem;
     background: transparent;
-    cursor: pointer;
   }
 
   .logout-icon {
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    position: fixed;
   }
 
   .logout-icon:hover {
@@ -293,25 +36,34 @@
   }
 
   .container-main {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
   }
 
   .container-post {
     display: flex;
-    margin-top: -5rem;
-    margin-left: 6rem;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    margin-right: 8rem;
+    margin-left: 18rem;
+    width: 33rem;
+    border-radius: 2rem;;
+    box-shadow: 4px 5px 0 0 rgba(0, 0, 0, 0.3);
   }
 
   .img-profile {
     background-color: rgb(151, 182, 218);
     border-radius: 50%;
     width: 4rem;
-    height: 4rem;
-    margin-left: -5rem;
+    margin-left: -3rem;
     position: absolute;
-    margin-top: -7rem;
+    margin-top: -5rem;
   }
 
   .post-publish {
@@ -320,15 +72,15 @@
     width: 50%;
     margin-bottom: 1rem;
     background-color: unset;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out
   }
 
   .post-publish:focus {
     outline: none;
-    box-shadow: 0 0 10px #acdcee70;
   }
 
   .post-publish::placeholder {
@@ -344,16 +96,16 @@
     align-items: center;
   }
 
-  .publish-btn,
-  .btn-add-img {
+  .publish-btn {
+    margin-top: 9rem;
+    margin-right: -4rem;
     border: none;
     background: transparent;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
 
-  .publish-btn:hover,
-  .btn-add-img:hover {
+  .publish-btn:hover {
     transform: scale(1.1);
   }
 
@@ -362,12 +114,37 @@
     margin-left: 1rem;
   }
 
+  .logo-footer {
+    display: block;
+    position: fixed;
+    top: 80%;
+    margin-left: 2rem;
+    width: 4rem;
+  }
+
+  .displayName {
+    position: fixed;
+    top: 85%;
+    margin-left: 7rem;
+  }
+
+  .container-footer {
+    display: inline-block;
+  }
+
   /* template dos posts desktop */
   .container-posts-feed {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #cce2ff;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 30rem;
+    border-radius: 2rem;;
+    box-shadow: 4px 5px 0 0 rgba(0, 0, 0, 0.1);
+    
   }
 
   .img-profile-post {
@@ -375,9 +152,9 @@
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
-    margin-left: -5rem;
+    margin-left: -3rem;
     position: absolute;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .user-name {
@@ -386,8 +163,8 @@
     font-weight: 600;
     font-style: italic;
     text-align: center;
-    margin-right: 13rem;
-    margin-top: 1rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
     justify-content: center;
     align-items: center;
     color: rgb(14, 58, 78);
@@ -399,7 +176,7 @@
     width: 4rem;
     height: 4px;
     background-color: #5badca;
-    margin-left: 3rem;
+    margin-left: 5rem;
     border-radius: 10px;
   }
 
@@ -408,12 +185,13 @@
     font-size: 1rem;
     justify-content: center;
     align-items: center;
-    background: #f0fbff;
-    box-shadow: 0 0 10px #acdcee70;
-    width: 20rem;
-    height: 8rem;
+    border: none;
+    background: none;
+    width: 15rem;
+    height: 5rem;
     padding: 1rem;
     margin-top: 1rem;
+    margin-left: 2rem;
   }
 
   .container-footer-feed {
