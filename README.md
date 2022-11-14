@@ -105,7 +105,7 @@ Após refinamento do prótotipo de acordo com os feedbacks recebidos, alcançamo
   <strong>Protótipos Desktop - Login e Cadastro ✨</strong><br/><br/>
   <img alt="prototipo-mobile" src="src/imagens/desktop_prototipos1.png" style="height: 350px; width:700px"><br/><br/>
   <strong>Protótipos Desktop - Homepage ✨</strong><br/><br/>
-  <img alt="prototipo-mobile" src="src/imagens/desktop_prototipos2.png" style="height: 500px;"><br/><br/>
+  <img alt="prototipo-mobile" src="src/imagens/protoripo-home.png" style="height: 500px;"><br/><br/>
 </div>
 
 
