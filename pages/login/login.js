@@ -1,7 +1,7 @@
 import { loginUser, loginGoogle } from '../../firebase/auth.js';
 import { getErrorMessage } from '../../firebase/errors.js';
 import { validationLogin } from '../../validations.js';
-import { redirect } from '../../routes.js';
+import { redirect } from '../../redirect.js';
 
 export default () => {
   const container = document.createElement('div');

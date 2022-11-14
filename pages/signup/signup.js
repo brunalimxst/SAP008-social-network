@@ -1,6 +1,6 @@
 import { loginGoogle, newUser } from '../../firebase/auth.js';
 import { getErrorMessage } from '../../firebase/errors.js';
-import { redirect } from '../../routes.js';
+import { redirect } from '../../redirect.js';
 import { validationRegister } from '../../validations.js';
 
 export default () => {

@@ -10,9 +10,7 @@ export const getAuth = jest.fn(() => (
     },
   }));
 
-export const getUser = jest.fn(() => {
-  return {
-    displayName: 'gabriella',
-    uid: 'testeuid',
-  };
-});
+export const getUser = jest.fn(() => ({
+  displayName: 'gabriella',
+  uid: 'testeuid',
+}));

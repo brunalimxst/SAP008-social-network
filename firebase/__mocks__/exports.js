@@ -8,30 +8,22 @@ export const signInWithPopup = jest.fn();
 export const getFirestore = jest.fn();
 export const collection = jest.fn();
 export const addDoc = jest.fn();
-export const getDocs = jest.fn(() => {
-  return [
-    {
-      id: 'testeid',
-      data: () => {
-        return {
-          message: 'messageTest',
-          likes: [],
-        };
-      },
-    },
-  ];
-});
-export const getDoc = jest.fn(() => {
-  return {
+export const getDocs = jest.fn(() => [
+  {
     id: 'testeid',
-    data: () => {
-      return {
-        message: 'messageTest',
-        likes: [],
-      };
-    },
-  };
-});
+    data: () => ({
+      message: 'messageTest',
+      likes: [],
+    }),
+  },
+]);
+export const getDoc = jest.fn(() => ({
+  id: 'testeid',
+  data: () => ({
+    message: 'messageTest',
+    likes: [],
+  }),
+}));
 export const readOnePost = jest.fn();
 export const doc = jest.fn();
 export const updatePost = jest.fn();
