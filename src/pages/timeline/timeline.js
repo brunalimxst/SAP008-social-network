@@ -6,23 +6,23 @@ import {
   deletePost,
   likePost,
   deslikePost,
-} from "../../firebase/timeline.js";
+} from '../../firebase/timeline.js';
 
-import { getUser, logout } from "../../firebase/auth.js";
-import { redirect } from "../../redirect.js";
-import { getAuth } from "../../firebase/exports.js";
-import { app } from "../../firebase/config.js";
-
+import { getUser, logout } from '../../firebase/auth.js';
+import { redirect } from '../../redirect.js';
+import { getAuth } from '../../firebase/exports.js';
+import { app } from '../../firebase/config.js';
 
 const auth = getAuth(app);
 
 export default () => {
   const container = document.createElement("div");
   const printPosts = readAllPosts();
-  
 
   const template = `
+      <header class='container-header'> 
    <header class='container-header'> 
+      <header class='container-header'> 
       <figure>
         <img class='logo-timeline' src='./imagens/logo-mobile.png' alt='logo'>
       </figure>
@@ -48,29 +48,29 @@ export default () => {
 
   container.innerHTML = template;
 
-  const btnLogout = container.querySelector(".logout-icon");
+  const btnLogout = container.querySelector('.logout-icon');
 
-  btnLogout.addEventListener("click", async () => {
+  btnLogout.addEventListener('click', async () => {
     await logout();
-    redirect("#login");
+    redirect('#login');
   });
 
-  const btnPublish = container.querySelector("#publish-btn");
-  const postPublish = container.querySelector("#post-publish");
-  const allPosts = container.querySelector("#allPosts");
+  const btnPublish = container.querySelector('#publish-btn');
+  const postPublish = container.querySelector('#post-publish');
+  const allPosts = container.querySelector('#allPosts');
 
-  btnPublish.addEventListener("click", async () => {
-    const publishingPost = container.querySelector("#publishingPost");
+  btnPublish.addEventListener('click', async () => {
+    const publishingPost = container.querySelector('#publishingPost');
     const messageContent = postPublish.value;
     if (messageContent.length > 0) {
       let postRef = await newPost(messageContent);
       postRef = await readOnePost(postRef.id);
       publishingPost.appendChild(mountPost(postRef));
     } else {
-      alert("Ops, parece que seu post está vazio");
+      alert('Ops, parece que seu post está vazio');
     }
 
-    postPublish.value = "";
+    postPublish.value = '';
   });
 
   printPosts.then((post) => {
@@ -91,7 +91,7 @@ const mountPost = (post) => {
       </div>
     `;
   }
-  const container = document.createElement("div");
+  const container = document.createElement('div');
 
   const templatePost = `
   <section class='container-posts-feed' id='posts-${post.userId}'>
@@ -124,46 +124,46 @@ const mountPost = (post) => {
   `;
   container.innerHTML = templatePost;
 
-  const btnDelete = container.querySelector("#btn-delete");
+  const btnDelete = container.querySelector('#btn-delete');
   // para disparar o modal
-  const modalDelete = container.querySelector("#modal-delete");
+  const modalDelete = container.querySelector('#modal-delete');
   if (btnDelete) {
-    btnDelete.addEventListener("click", () => {
-      modalDelete.style.display = "flex";
+    btnDelete.addEventListener('click', () => {
+      modalDelete.style.display = 'flex';
     });
   }
   // para fechar o modal
-  const btnModalCancel = container.querySelector("#btn-modal-cancel");
+  const btnModalCancel = container.querySelector('#btn-modal-cancel');
   if (btnModalCancel) {
-    btnModalCancel.addEventListener("click", () => {
-      modalDelete.style.display = "none";
+    btnModalCancel.addEventListener('click', () => {
+      modalDelete.style.display = 'none';
     });
   }
   // para deletar o post
-  const btnModalDelete = container.querySelector("#btn-modal-delete");
+  const btnModalDelete = container.querySelector('#btn-modal-delete');
   if (btnModalDelete) {
-    btnModalDelete.addEventListener("click", () => {
+    btnModalDelete.addEventListener('click', () => {
       deletePost(post.id);
-      modalDelete.style.display = "none";
+      modalDelete.style.display = 'none';
       container.remove();
     });
   }
 
-  const btnEdit = container.querySelector("#btn-edit");
+  const btnEdit = container.querySelector('#btn-edit');
   if (btnEdit) {
-    btnEdit.addEventListener("click", (e) => {
-      const textarea = container.querySelector("#post-published");
-      textarea.removeAttribute("disabled");
-      btnEdit.removeEventListener("click", e);
-      btnEdit.addEventListener("click", () => {
-        textarea.setAttribute("disabled", "true");
+    btnEdit.addEventListener('click', (e) => {
+      const textarea = container.querySelector('#post-published');
+      textarea.removeAttribute('disabled');
+      btnEdit.removeEventListener('click', e);
+      btnEdit.addEventListener('click', () => {
+        textarea.setAttribute('disabled', 'true');
         updatePost(post.id, textarea.value);
       });
     });
   }
 
-  const btnLike = container.querySelector("#btn-like");
-  btnLike.addEventListener("click", () => {
+  const btnLike = container.querySelector('#btn-like');
+  btnLike.addEventListener('click', () => {
     const user = getUser();
     if (post.likes.includes(user.uid)) {
       deslikePost(post.id, user.uid);
@@ -174,7 +174,7 @@ const mountPost = (post) => {
       post.likes.push(user.uid);
       btnLike.innerHTML = `<img class='btn-like-icon' src='./imagens/icon-liked.svg' alt='liked'><p class='number-likes'>${post.likes.length}</p>`;
     }
-    btnLike.querySelector("p").innerText = post.likes.length;
+    btnLike.querySelector('p').innerText = post.likes.length;
   });
 
   return container;
